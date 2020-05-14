@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OgrenmeyeBasla">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bottom" />
+
+    <Button
+        android:id="@+id/btnEng"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/anasayfa_buton_sec"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="butoning"
+        android:text="BİR HATA OLUŞTU"
+        android:textColor="@drawable/anasayfa_buton_yazi_sec"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnTr"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="butontur"
+        android:background="@drawable/anasayfa_buton_sec"
+
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center|center_vertical"
+        android:textColor="@drawable/anasayfa_buton_yazi_sec"
+        android:textSize="20sp"
+        android:text="@string/engGizli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEng" />
+
+    <Button
+        android:id="@+id/btnOgrendim"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/yeni_kelime"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="ogrendim"
+        android:text="@string/rend_m"
+        android:textColor="@drawable/ogrenme_buton_yazi_sec"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/btnTr"
+        app:layout_constraintTop_toBottomOf="@+id/btnTr" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/ogrenme_buton_sec"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="testeBasla"
+        android:text="@string/teste_ba_la"
+        android:textColor="@drawable/ogrenme_buton_yazi_sec"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/bgnokta" />
+
+    <TextView
+        android:id="@+id/txtHedef2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="ÖĞRENMEYE BAŞLA"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+
+        android:gravity="center|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:gravity="center|center_horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableTop="@drawable/ogren"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="anasayfa"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="ANASAYFA" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableTop="@drawable/durum"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="btnDurumum"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Durumum" />
+
+            <Button
+                android:id="@+id/btnAyarlar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableTop="@drawable/ayarlar"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="ayarlar"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Ayarlar" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+
+
+        android:background="@drawable/seviye_sec"
+        android:baselineAligned="false"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="butoning"
+        android:textColor="@drawable/seviye_buton_yazi_sec"
+
+        android:text="GÖSTER"
+
+        app:layout_constraintStart_toStartOf="@+id/btnTr"
+        app:layout_constraintTop_toBottomOf="@+id/btnTr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

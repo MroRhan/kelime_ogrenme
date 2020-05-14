@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnaEkran">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/bgnokta" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bottom" />
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="315dp"
+
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/anasayfa_buton_sec"
+        android:drawableStart="@drawable/buton1"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center|left|center_vertical"
+        android:onClick="ogrenmeyeBasla"
+        android:paddingLeft="60dp"
+        android:text="ÖĞRENMEYE BAŞLA"
+        android:textColor="@drawable/anasayfa_buton_yazi_sec"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnTr"
+                android:layout_width="315dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/anasayfa_buton_sec"
+                android:drawableStart="@drawable/tr"
+                android:drawableEnd="@drawable/right_ok"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center|left|center_vertical"
+                android:onClick="btnTrclick"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Türkçe EGZERSİZİ"
+                android:textColor="@drawable/anasayfa_buton_yazi_sec"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnEng"
+                android:layout_width="315dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/anasayfa_buton_sec"
+                android:drawableStart="@drawable/en"
+                android:drawableEnd="@drawable/right_ok"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center|left|center_vertical"
+                android:onClick="btnEnclick"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="İNGİLİZCE EGZERSİZİ"
+                android:textColor="@drawable/anasayfa_buton_yazi_sec"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnYazma"
+                android:layout_width="315dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/anasayfa_buton_sec"
+                android:drawableStart="@drawable/abc"
+                android:drawableEnd="@drawable/right_ok"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center|left|center_vertical"
+                android:onClick="btnSiraclick"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="SIRALAMA EGZERSİZİ"
+                android:textColor="@drawable/anasayfa_buton_yazi_sec"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnDinleme"
+                android:layout_width="315dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/anasayfa_buton_sec"
+                android:drawableStart="@drawable/dinleme"
+                android:drawableEnd="@drawable/right_ok"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center|left|center_vertical"
+                android:onClick="btnDinleclick"
+                android:paddingLeft="35dp"
+                android:paddingRight="30dp"
+
+                android:text="DİNLEME EGZERSİZİ"
+                android:textColor="@drawable/anasayfa_buton_yazi_sec"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnKonusma"
+                android:layout_width="315dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/anasayfa_buton_sec"
+                android:drawableStart="@drawable/mic"
+                android:drawableEnd="@drawable/right_ok"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center|left|center_vertical"
+                android:onClick="btnKnsclick"
+                android:paddingLeft="35dp"
+                android:paddingRight="30dp"
+                android:text="KONUŞMA EGZERSİZİ"
+                android:textColor="@drawable/anasayfa_buton_yazi_sec"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txtHedef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="EGZERSİZLER"
+        android:textColor="#212121"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/btn1" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+
+        android:gravity="center|center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:gravity="center|center_horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableTop="@drawable/ogren"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="ogrenmeyeBasla"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Öğren" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableTop="@drawable/durum"
+                android:drawablePadding="5dp"
+                android:onClick="btnDurumum"
+                android:fontFamily="@font/poppins_bold"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Durumum" />
+
+            <Button
+                android:id="@+id/btnAyarlar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFF"
+                android:drawableTop="@drawable/ayarlar"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="btnAyarclick"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Ayarlar" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

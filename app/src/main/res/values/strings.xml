@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Kelime Ezberle</string>
+    <string name="sev_ye_se_n_z">SEVİYE SEÇİNİZ</string>
+    <string name="ba_langi">BAŞLANGIÇ</string>
+    <string name="orta_sev_ye">ORTA SEVİYE</string>
+    <string name="ler_sev_ye">İLERİ SEVİYE</string>
+    <string name="kelime_renme">Kelime Öğrenme</string>
+    <string name="g_nl_k_kel_me_hedef_n_z">GÜNLÜK KELİME</string>
+    <string name="_15_kelime">15 Kelime</string>
+    <string name="_10_kelime">10 Kelime</string>
+    <string name="_5_kelime">5 Kelime</string>
+    <string name="g_nl_k_hedefiniz">Günlük Hedefiniz?</string>
+    <string name="kaydet">KAYDET</string>
+    <string name="book">BOOK</string>
+    <string name="engGizli">_ _ _ _ _</string>
+    <string name="rend_m">YENİ KELİME</string>
+    <string name="geri"><![CDATA[<]]></string>
+    <string name="ileri"><![CDATA[>]]></string>
+    <string name="teste_ba_la">TESTE BAŞLA</string>
+    <string name="tekrar_d_nle">TEKRAR DİNLE</string>
+    <string name="bas_konus">BAS KONUS</string>
+    <string name="ne_geldi">Ne Geldi?</string>
+    <string name="_1_5">1/5</string>
+    <string name="hedef_n_z">HEDEFİNİZ</string>
+    <string name="title_activity_home_screen">home_screen</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

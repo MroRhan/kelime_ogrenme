@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "13911532303",
+    "firebase_url": "https://kelime-ogrenme-f7c09.firebaseio.com",
+    "project_id": "kelime-ogrenme-f7c09",
+    "storage_bucket": "kelime-ogrenme-f7c09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13911532303:android:28e83605dfcac86d14d47a",
+        "android_client_info": {
+          "package_name": "com.mklcbilisim.kelimeezberle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13911532303-o0ddi9i378u8l9h4p49aps7fji6i170o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgywPTll5bdq7fU9c6vPMKfL2qt7bV5zU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13911532303-o0ddi9i378u8l9h4p49aps7fji6i170o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
