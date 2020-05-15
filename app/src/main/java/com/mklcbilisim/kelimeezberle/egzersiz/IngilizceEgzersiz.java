@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.mklcbilisim.kelimeezberle.AnaEkran;
 import com.mklcbilisim.kelimeezberle.Ayarlar;
+import com.mklcbilisim.kelimeezberle.GenelDurum;
 import com.mklcbilisim.kelimeezberle.R;
 import com.mklcbilisim.kelimeezberle.YazmaTesti;
 
@@ -28,7 +29,7 @@ public class IngilizceEgzersiz extends AppCompatActivity implements TextToSpeech
     Button btnKelime,btnA,btnB,btnC,btnD;
     TextView sayac;
     int trIx2,engIx2;
-    Cursor cursor;
+    Cursor cursor,cursor2;
     String[] ezberTr,ezberEn,tekrarTr,tekrarEn,tumEn,tumTr;
     int dogruSay ,randomKelime,yanlisSay,secilenHedef ,say =0;
     TextToSpeech tts;
@@ -39,8 +40,20 @@ public class IngilizceEgzersiz extends AppCompatActivity implements TextToSpeech
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_egzersiz_ingilizce);
-        gunlukHedef = this.getSharedPreferences("com.mklcbilisim.kelimeezberle", Context.MODE_PRIVATE);
-        secilenHedef = gunlukHedef.getInt("hedef",0);
+
+
+
+        try {
+            SQLiteDatabase database = this.openOrCreateDatabase("Kelimeler",MODE_PRIVATE,null);
+            cursor2 = database.rawQuery("SELECT * FROM kelimeler WHERE durum = 5  or durum = 4",null);
+            secilenHedef = cursor2.getCount();
+
+        }catch (Exception e){
+
+        }
+
+
+
         tts = new TextToSpeech(this,this);
         btnKelime = findViewById(R.id.btnKelime);
 
@@ -192,7 +205,7 @@ public class IngilizceEgzersiz extends AppCompatActivity implements TextToSpeech
 
             SQLiteDatabase database = this.openOrCreateDatabase("Kelimeler",MODE_PRIVATE,null);
 
-            cursor = database.rawQuery("SELECT * FROM kelimeler WHERE durum = 2 ORDER BY RANDOM() ",null);
+            cursor = database.rawQuery("SELECT * FROM kelimeler WHERE durum = 5  or durum = 4 ORDER BY RANDOM() ",null);
             engIx2 = cursor.getColumnIndex("kelimetr");
             trIx2 = cursor.getColumnIndex("kelimeing");
             ezberEn = new String[secilenHedef];
@@ -265,7 +278,7 @@ int tikSay = 0;
 
         if(tikSay >= tumEn.length){
 
-            hataYaptim(ezberTr[randomKelime]);
+
 
         }else{
             tikSay++;
@@ -398,7 +411,7 @@ int tikSay = 0;
                     kelimeSor(randomKelime);
                     //      System.out.println(randomKelime);
                 }else{
-                    Intent enSayfa = new Intent(IngilizceEgzersiz.this,YazmaTesti.class);
+                    Intent enSayfa = new Intent(IngilizceEgzersiz.this,IngilizceEgzersiz.class);
 
                     if(yanlisSay > 0){
                         randomKelime = 0;
@@ -450,20 +463,13 @@ int tikSay = 0;
     }
 
 
-    public void hataYaptim(String kelime){
-        System.out.println(kelime);
-        try {
-
-            SQLiteDatabase database = this.openOrCreateDatabase("Kelimeler",MODE_PRIVATE,null);
-            String guncelleSrgu = "UPDATE kelimeler SET S2 = 1 WHERE kelimeing = '" + kelime + "'";
-            System.out.println(guncelleSrgu);
-            database.execSQL(guncelleSrgu);
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-            cursor.close();
+    public void durumum(View view){
+        Intent durumum = new Intent(this, GenelDurum.class);
+        finish();
+        startActivity(durumum);
     }
+
+
 
 
 }

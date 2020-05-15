@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.mklcbilisim.kelimeezberle.egzersiz.KonusmaEgzersiz;
 
 import java.util.List;
 
@@ -115,6 +118,10 @@ public class KelimeAdaptor extends BaseAdapter {
                         String guncelleSrgu = "UPDATE kelimeler SET durum=3,S1=0,S2=0,S3=0,S4=0,S5=0 WHERE id = '" + kelime.getId() + "'";
                         System.out.println(guncelleSrgu);
                         database.execSQL(guncelleSrgu);
+
+                        Toast.makeText(activity,"Kelime tekrar öğrenilecek",Toast.LENGTH_SHORT).show();
+
+
 
                     }catch (Exception e){
                         e.printStackTrace();

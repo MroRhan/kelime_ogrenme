@@ -26,7 +26,7 @@ public class GenelDurum extends AppCompatActivity   {
 
 
     TextView txtGelenHedef,basariYuzde;
-    ListView listView;
+    public ListView listView;
     List<Kelime> kelimeler = new ArrayList<>();
     SharedPreferences gunlukHedef;
     float genelBasari;
@@ -150,15 +150,24 @@ public class GenelDurum extends AppCompatActivity   {
 
 
         //LİST VİEW DOLDUR
-
         listView = findViewById(R.id.lstView);
+
+
+//yenileList();;
+
+
+
+
+    }
+
+    public void yenileList(){
+
+
         kelimeAdaptor = new KelimeAdaptor(this,kelimeler);
         listView.setAdapter(kelimeAdaptor);
-
-
-
-
-
+        kelimeAdaptor.notifyDataSetChanged();
+        listView.invalidateViews();
+        listView.refreshDrawableState();
     }
 
    /* public void tekrarEt(int Id){

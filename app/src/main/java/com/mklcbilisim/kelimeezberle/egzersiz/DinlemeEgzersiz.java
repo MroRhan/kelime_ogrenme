@@ -177,17 +177,17 @@ public class DinlemeEgzersiz extends AppCompatActivity implements TextToSpeech.O
 
             SQLiteDatabase database = this.openOrCreateDatabase("Kelimeler",MODE_PRIVATE,null);
 
-            cursor = database.rawQuery("SELECT * FROM kelimeler WHERE durum = 2 ORDER BY RANDOM() ",null);
+            cursor = database.rawQuery("SELECT * FROM kelimeler WHERE durum = 5  or durum = 4  ORDER BY RANDOM() ",null);
             engIx2 = cursor.getColumnIndex("kelimeing");
             trIx2 = cursor.getColumnIndex("kelimetr");
-            ezberEn = new String[secilenHedef];
-            ezberTr = new String[secilenHedef];
+            ezberEn = new String[cursor.getCount()];
+            ezberTr = new String[cursor.getCount()];
 
-            tekrarEn = new String[secilenHedef];
-            tekrarTr = new String[secilenHedef];
+            tekrarEn = new String[cursor.getCount()];
+            tekrarTr = new String[cursor.getCount()];
 
-            tumEn = new String[secilenHedef];
-            tumTr = new String[secilenHedef];
+            tumEn = new String[cursor.getCount()];
+            tumTr = new String[cursor.getCount()];
 
             while (cursor.moveToNext()){
                 ezberEn[say] = cursor.getString(engIx2);
@@ -248,7 +248,7 @@ int tikSay =0;
 
         if(tikSay >= tumEn.length){
 
-            hataYaptim(ezberEn[randomKelime]);
+
 
         }else{
             tikSay++;
@@ -379,7 +379,7 @@ int tikSay =0;
                     kelimeSor(randomKelime);
                     //      System.out.println(randomKelime);
                 }else{
-                    Intent enSayfa = new Intent(DinlemeEgzersiz.this,KonusmaTesti.class);
+                    Intent enSayfa = new Intent(DinlemeEgzersiz.this,DinlemeEgzersiz.class);
 
                     if(yanlisSay > 0){
                         randomKelime = 0;
@@ -431,20 +431,7 @@ int tikSay =0;
     }
 
 
-    public void hataYaptim(String kelime){
-        System.out.println(kelime);
-        try {
 
-            SQLiteDatabase database = this.openOrCreateDatabase("Kelimeler",MODE_PRIVATE,null);
-            String guncelleSrgu = "UPDATE kelimeler SET S4 = 1 WHERE kelimeing = '" + kelime + "'";
-            System.out.println(guncelleSrgu);
-            database.execSQL(guncelleSrgu);
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        cursor.close();
-    }
 
 
 

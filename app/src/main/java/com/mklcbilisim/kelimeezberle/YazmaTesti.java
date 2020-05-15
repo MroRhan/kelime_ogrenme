@@ -53,7 +53,7 @@ public class YazmaTesti extends AppCompatActivity implements TextToSpeech.OnInit
 
             SQLiteDatabase database = this.openOrCreateDatabase("Kelimeler",MODE_PRIVATE,null);
             btnKelime = findViewById(R.id.btnKelime);
-            cursor = database.rawQuery("SELECT * FROM kelimeler WHERE durum = 2  LIMIT 5",null);
+            cursor = database.rawQuery("SELECT * FROM kelimeler WHERE durum = 2 ",null);
             engIx2 = cursor.getColumnIndex("kelimeing");
             trIx2 = cursor.getColumnIndex("kelimetr");
             ezberEn = new String[5];

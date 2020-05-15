@@ -58,11 +58,11 @@ public class SiralamaEgzersiz extends AppCompatActivity implements TextToSpeech.
 
             SQLiteDatabase database = this.openOrCreateDatabase("Kelimeler",MODE_PRIVATE,null);
             btnKelime = findViewById(R.id.btnKelime);
-            cursor = database.rawQuery("SELECT * FROM kelimeler WHERE durum = 2  LIMIT 5",null);
+            cursor = database.rawQuery("SELECT * FROM kelimeler WHERE durum = 5  or durum = 4 ",null);
             engIx2 = cursor.getColumnIndex("kelimeing");
             trIx2 = cursor.getColumnIndex("kelimetr");
-            ezberEn = new String[5];
-            ezberTr = new String[5];
+            ezberEn = new String[cursor.getCount()];
+            ezberTr = new String[cursor.getCount()];
 
             while (cursor.moveToNext()){
                 ezberEn[say] = cursor.getString(trIx2);
@@ -361,7 +361,7 @@ public class SiralamaEgzersiz extends AppCompatActivity implements TextToSpeech.
 
 
                 }else{
-                    Intent enSayfa = new Intent(SiralamaEgzersiz.this,DinlemeTesti.class);
+                    Intent enSayfa = new Intent(SiralamaEgzersiz.this,SiralamaEgzersiz.class);
                     startActivity(enSayfa);
                 }
 
@@ -389,20 +389,6 @@ public class SiralamaEgzersiz extends AppCompatActivity implements TextToSpeech.
 
 
 
-    public void hataYaptim(String kelime){
-        System.out.println(kelime);
-        try {
-
-            SQLiteDatabase database = this.openOrCreateDatabase("Kelimeler",MODE_PRIVATE,null);
-            String guncelleSrgu = "UPDATE kelimeler SET S3 = 1 WHERE kelimeing = '" + kelime + "'";
-            System.out.println(guncelleSrgu);
-            database.execSQL(guncelleSrgu);
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        cursor.close();
-    }
 
 
     @Override
@@ -436,7 +422,7 @@ public class SiralamaEgzersiz extends AppCompatActivity implements TextToSpeech.
             myButton.setTextColor(Color.WHITE);
             myButton.setTextSize(20);
             butonDuzelt();
-            hataYaptim(ezberTr[randomKelime]);
+
 
         }
 

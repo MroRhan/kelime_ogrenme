@@ -165,6 +165,7 @@
                 android:drawableTop="@drawable/durum"
                 android:drawablePadding="5dp"
                 android:fontFamily="@font/poppins_bold"
+                android:onClick="durumum"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
                 android:text="Durumum" />
@@ -203,7 +204,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="TÜRKÇE / İNGİLİZCE TESTİ"
+        android:text="TÜRKÇE / İNGİLİZCE EGZERSİZİ"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

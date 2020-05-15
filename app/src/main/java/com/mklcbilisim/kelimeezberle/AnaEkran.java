@@ -12,6 +12,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.mklcbilisim.kelimeezberle.egzersiz.DinlemeEgzersiz;
+import com.mklcbilisim.kelimeezberle.egzersiz.IngilizceEgzersiz;
+import com.mklcbilisim.kelimeezberle.egzersiz.KonusmaEgzersiz;
+import com.mklcbilisim.kelimeezberle.egzersiz.SiralamaEgzersiz;
 import com.mklcbilisim.kelimeezberle.egzersiz.TurkceEgzersiz;
 
 public class AnaEkran extends AppCompatActivity {
@@ -328,7 +333,7 @@ public class AnaEkran extends AppCompatActivity {
 
          if(egzersizKelime > 5 ){
 
-             Intent intent = new Intent(getApplicationContext(),CoktanSecmeliEn.class);
+             Intent intent = new Intent(getApplicationContext(), IngilizceEgzersiz.class);
       //       finish();
              startActivity(intent);
 
@@ -356,7 +361,7 @@ public class AnaEkran extends AppCompatActivity {
 
          if(egzersizKelime > 5 ){
 
-             Intent intent = new Intent(getApplicationContext(),YazmaTesti.class);
+             Intent intent = new Intent(getApplicationContext(), SiralamaEgzersiz.class);
         //      finish();
              startActivity(intent);
 
@@ -385,7 +390,7 @@ public class AnaEkran extends AppCompatActivity {
 
          if(egzersizKelime > 5 ){
 
-             Intent intent = new Intent(getApplicationContext(),DinlemeTesti.class);
+             Intent intent = new Intent(getApplicationContext(), DinlemeEgzersiz.class);
       //       finish();
              startActivity(intent);
 
@@ -413,7 +418,7 @@ public class AnaEkran extends AppCompatActivity {
 
          if(egzersizKelime > 5 ){
 
-             Intent intent = new Intent(getApplicationContext(),KonusmaTesti.class);
+             Intent intent = new Intent(getApplicationContext(), KonusmaEgzersiz.class);
          //    finish();
              startActivity(intent);
 
