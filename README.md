@@ -10,63 +10,13 @@ Android kelime ögrenme uygulaması
 
 <img src="http://mrorhan.com/kelimeler/1.png" width="33%">  <img src="http://mrorhan.com/kelimeler/2.png" width="33%">    <img src="http://mrorhan.com/kelimeler/3.png" width="33%">
 
+<img src="http://mrorhan.com/kelimeler/4.png" width="33%">  <img src="http://mrorhan.com/kelimeler/5.png" width="33%">    <img src="http://mrorhan.com/kelimeler/6.png" width="33%">
 
-<div class="container">
-  <div class="row">
-    <div class="col">
-     <img  height="500" width="33%" src="http://mrorhan.com/kelimeler/1.png"></img>
-    </div>
-    <div class="col">
-<img height="500" width="30%" src="http://mrorhan.com/kelimeler/2.png"></img>
-    </div>
-    <div class="col">
-  <img height="500" width="30%" src="http://mrorhan.com/kelimeler/3.png"></img>
-    </div>
-  </div>
-    <div class="row">
-    <div class="col">
-     <img  height="500" width="33%" src="http://mrorhan.com/kelimeler/4.png"></img>
-    </div>
-    <div class="col">
-<img height="500" width="30%" src="http://mrorhan.com/kelimeler/5.png"></img>
-    </div>
-    <div class="col">
-  <img height="500" width="30%" src="http://mrorhan.com/kelimeler/6.png"></img>
-    </div>
-  </div>
-    <div class="row">
-    <div class="col">
-     <img  height="500" width="33%" src="http://mrorhan.com/kelimeler/7.png"></img>
-    </div>
-    <div class="col">
-<img height="500" width="30%" src="http://mrorhan.com/kelimeler/8.png"></img>
-    </div>
-    <div class="col">
-  <img height="500" width="30%" src="http://mrorhan.com/kelimeler/9.png"></img>
-    </div>
-  </div>
-    <div class="row">
-    <div class="col">
-     <img  height="500" width="33%" src="http://mrorhan.com/kelimeler/10.png"></img>
-    </div>
-    <div class="col">
-<img height="500" width="30%" src="http://mrorhan.com/kelimeler/11.png"></img>
-    </div>
-    <div class="col">
-  <img height="500" width="30%" src="http://mrorhan.com/kelimeler/12.png"></img>
-    </div>
-  </div>
-    <div class="row">
-    <div class="col">
-     <img  height="500" width="33%" src="http://mrorhan.com/kelimeler/13.png"></img>
-    </div>
-    <div class="col">
-<img height="500" width="30%" src="http://mrorhan.com/kelimeler/14.png"></img>
-    </div>
-    <div class="col">
-    </div>
-  </div>
-</div>
+<img src="http://mrorhan.com/kelimeler/7.png" width="33%">  <img src="http://mrorhan.com/kelimeler/8.png" width="33%">    <img src="http://mrorhan.com/kelimeler/9.png" width="33%">
+
+<img src="http://mrorhan.com/kelimeler/10.png" width="33%">  <img src="http://mrorhan.com/kelimeler/11.png" width="33%">    <img src="http://mrorhan.com/kelimeler/12.png" width="33%">
+
+<img src="http://mrorhan.com/kelimeler/13.png" width="33%">  <img src="http://mrorhan.com/kelimeler/14.png" width="33%">    
 
 
 
