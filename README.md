@@ -7,6 +7,10 @@ Android kelime ögrenme uygulaması
 <strong>Ekran Görüntüleri:</strong>
 
 
+
+<img src="http://mrorhan.com/kelimeler/1.png" width="250"> | <img src="http://mrorhan.com/kelimeler/2.png" width="250">
+
+
 <div class="container">
   <div class="row">
     <div class="col">
