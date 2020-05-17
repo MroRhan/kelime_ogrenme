@@ -8,7 +8,7 @@ Android kelime ögrenme uygulaması
 
 
 
-<img src="http://mrorhan.com/kelimeler/1.png" width="250"> | <img src="http://mrorhan.com/kelimeler/2.png" width="250">  |  <img src="http://mrorhan.com/kelimeler/3.png" width="250">
+<img src="http://mrorhan.com/kelimeler/1.png" width="33%"> | <img src="http://mrorhan.com/kelimeler/2.png" width="33%">  |  <img src="http://mrorhan.com/kelimeler/3.png" width="33%">
 
 
 <div class="container">
