@@ -3,6 +3,28 @@
 
 Android kelime ögrenme uygulaması
 
+Uygulama ilk açıldığında kullanıcıdan seviye seçmesi ve ardından günlük kaç kelime ezberlemek istediği bilgileri alınmaktadır.
+
+GÜnlük belirlenen hedef kadar karşısına kelime çıkacak ve 5 aşamalı öğrenme testlerini görecektir. 
+
+5 aşamayı geçtikten sonra kullanıcı isterse uygulamadan yeni kelimeler isteyecektir. 
+
+Kelimeleri öğretmek için 5 aşa aşağıda maddeler halinde verilmilmiştir.
+
+1-) Kelimenin İngilizcesini gösterip, kullanıcıdan Türkçe çevirisini bilmesini beklemek.
+2-) Kelimenin Türkçesini verip, kullanıcıdan İngilizce çevirisini bilmesini beklemek.
+3-) İngilizce kelimenin doğru yazılışı bilmek.
+4-) Duyduğu kelimeyi bilmek.
+5-) Kelimeyi telaffuz edebilmek.
+
+Test aşaması sonrası kelimelerin değerlendirme raporu kullanıcıya gösterilecektir. Kullancı bu aşamada istediği taktirde TEKRAR ET butonuna bastığında kelimeyi ezberlenecek havuzuna atmasını sağlayacaktır.
+
+Egzersiz ekranın aşamalarında kullancının daha önce öğrendiği kelimeleri tekrar edebilmesi amaçlanmıştır.
+
+Ayarlar kısmında kullanıcı istediği zaman seviyesini değiştirebilir, istediği zaman kelimeleri sıfırlayıp baştan başlayabilir.
+
+Keliemeler uzak sunucudan çekildiği için seviye ve hedef seçildikten sonra internet bağlantısına gerek yoktur.
+
 
 <strong>Ekran Görüntüleri:</strong>
 
