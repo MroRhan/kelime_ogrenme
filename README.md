@@ -11,11 +11,11 @@ GÜnlük belirlenen hedef kadar karşısına kelime çıkacak ve 5 aşamalı ö�
 
 Kelimeleri öğretmek için 5 aşa aşağıda maddeler halinde verilmilmiştir.
 
-1-) Kelimenin İngilizcesini gösterip, kullanıcıdan Türkçe çevirisini bilmesini beklemek.
-2-) Kelimenin Türkçesini verip, kullanıcıdan İngilizce çevirisini bilmesini beklemek.
-3-) İngilizce kelimenin doğru yazılışı bilmek.
-4-) Duyduğu kelimeyi bilmek.
-5-) Kelimeyi telaffuz edebilmek.
+1-) Kelimenin İngilizcesini gösterip, kullanıcıdan Türkçe çevirisini bilmesini beklemek.<br>
+2-) Kelimenin Türkçesini verip, kullanıcıdan İngilizce çevirisini bilmesini beklemek.<br>
+3-) İngilizce kelimenin doğru yazılışı bilmek.<br>
+4-) Duyduğu kelimeyi bilmek.<br>
+5-) Kelimeyi telaffuz edebilmek.<br>
 
 Test aşaması sonrası kelimelerin değerlendirme raporu kullanıcıya gösterilecektir. Kullancı bu aşamada istediği taktirde TEKRAR ET butonuna bastığında kelimeyi ezberlenecek havuzuna atmasını sağlayacaktır.
 
